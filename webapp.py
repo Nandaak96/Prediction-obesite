@@ -9,7 +9,7 @@ import altair as alt    ## Pour créer des graphiques interactifs
 
 ##  CONFIGURATION DE NOTRE INTERFACE UTILISATEUR
  
-st.set_page_config(page_title="🩺Prédiction du niveau d'obésité", page_icon="🩺", layout="wide")
+st.set_page_config(page_title="Prédiction du niveau d'obésité", page_icon="🩺", layout="wide")
     #page_title : le titre de l’onglet dans le navigateur.
     #page_icon : l’icône de l’onglet.
     #layout="wide" : élargit la mise en page pour utiliser toute la largeur de l’écran.
@@ -17,7 +17,7 @@ st.set_page_config(page_title="🩺Prédiction du niveau d'obésité", page_icon
 
 ##  AJOUT D'UNE IMAGE COMME BANNIERE
 from PIL import Image
-image = Image.open("/Users/nanda/Documents/DATA ANALYTICS-PARIS 1/ProjetPython_Sante/Image2.jpg")
+image = Image.open("Image2.jpg")
 
 st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
 st.image(image, use_container_width=True)
@@ -73,7 +73,8 @@ st.sidebar.markdown("---")
 st.sidebar.caption("⚠️ Ceci est un outil pédagogique. Ne remplace pas un avis médical.")
 
 
-## Pour faire la correspondance entre les input utilisateurs et notre BDD on crée un dictionnaire de correspondance
+## Pour faire la correspondance entre les input utilisateurs et notre BDD 
+## On crée un dictionnaire de correspondance
 ## On associe donc chaque input utilisateur au code correspondant dans notre BDD
 genre_dic = {"Homme": 1, "Femme": 0}
 historique_dic = {"Oui": 1, "Non": 0}
@@ -164,7 +165,8 @@ dt["FAVC"] = dt["FAVC"].replace({0: "Non", 1: "Oui"})
 ## Création d'une version dupliquée de notre BDD pour la suite
 dt_all=dt
 
-## Puisque nous nous n'avons pas la variable IMC dans notre BDD df_all, nous allons le calculer à partir des colonnes Taille et Poids :
+## Puisque nous nous n'avons pas la variable IMC dans notre BDD df_all, 
+# nous allons le calculer à partir des colonnes Taille et Poids :
 if "IMC" not in dt_all.columns:
     dt_all["IMC"] = dt_all["Weight"] / (dt_all["Height"] ** 2)
 

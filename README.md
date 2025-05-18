@@ -16,10 +16,12 @@ Elle vise à sensibiliser les utilisateurs à leur mode de vie et leur fournir u
 
 Le jeu de données provient d’une enquête sur les comportements alimentaires et le style de vie. Il contient :
 - des variables quantitatives (âge, taille, poids…),
-- des variables qualitatives (fréquence des repas, transport utilisé, activité physique…).
-qui sont pertinentes
+- des variables qualitatives (fréquence des repas, transport utilisé, activité physique…) qui sont pertinentes.
 
 Ce dataset est aussi bien adapté à une tâche de **classification supervisée multiclasse**.
+
+Vous pouvez trouver le dataset ci-dessous : https://www.kaggle.com/datasets/jpkochar/obesity-risk-dataset 
+
 
 ---
 
@@ -40,7 +42,7 @@ Le modèle a été entraîné, évalué, puis sauvegardé pour être utilisé da
 
 ## 🖥️ Fonctionnement global de l'application
 
-L'application est développée dans un fichier .py avec **Streamlit**, une bibliothèque Python pour créer facilement des interfaces web. Nous l'avons déployé uniquement en local.
+L'application est développée dans un fichier .py avec **Streamlit**, une bibliothèque Python qui permet de créer facilement des interfaces web. Nous l'avons déployé uniquement en local.
 
 ### ⚙️ Étapes de fonctionnement :
 1. L’utilisateur entre ses informations via des champs interactifs (âge, sexe, fréquence des repas, activité physique, etc.).
