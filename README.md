@@ -1,9 +1,9 @@
 # 🩺WebApp de Prédiction du Risque d'Obésité
 
 ## Membres du groupe
-Abdoulaye NDIAYE
-Akouyo AKPAKLI
-Léa GRAVELLARD 
+- Abdoulaye NDIAYE
+- Akouyo AKPAKLI
+- Léa GRAVELLARD 
 
 ## 🎯 Objectif de l'application
 
